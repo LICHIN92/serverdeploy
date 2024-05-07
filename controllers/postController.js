@@ -32,7 +32,8 @@ const getPost = async (req, res) => {
         const postDetail = await post.find({})
         res.status(200).json(postDetail)
         console.log(postDetail);
-
+    console.log('getpost');
+        
     } catch (error) {
         console.log(error);
         res.json(500).json({ error: 'intenal error' })
